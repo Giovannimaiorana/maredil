@@ -4,13 +4,18 @@ import headerSidebar from './components/headerSidebar.vue';
 
 
 useSeoMeta({
-  title: 'Transizione Digitale ed Ecosostenibile | Trade',
-  ogTitle: 'Trade - Ingegneria per l’Efficienza e la Sostenibilità',
-  description: 'Affianchiamo aziende e pubbliche amministrazioni nella transizione digitale ed ecosostenibile con soluzioni di Ingegneria Ambientale su misura.',
-  ogDescription: 'Trade: il partner ideale per innovare e rendere sostenibile il tuo business. Scopri i nostri servizi di ingegneria ambientale.',
-  ogImage: 'https://tradegreen.tech/img/tradeSeo.png',
-  ogSiteName: 'Trade',
-  ogUrl: 'https://tradegreen.tech',
+  title: 'Ristrutturazioni e Manutenzioni Edili | MAREDIL Costruzioni',
+  ogTitle: 'MAREDIL - Esperti in Ristrutturazioni e Soluzioni Edili',
+  description: 'Maredil Costruzioni offre servizi di ristrutturazione, manutenzione edifici, cappotti termici, cartongessi, pitture, pavimenti e coperture per privati e aziende.',
+  ogDescription: 'Affidati a Maredil per ristrutturazioni e manutenzioni di qualità. Specializzati in cappotti termici, cartongessi, pitture, pavimenti e coperture.',
+  ogImage: 'https://maredilcostruzioni.it/img/maredilSeo.png',
+  ogSiteName: 'MAREDIL Costruzioni',
+  ogUrl: 'https://maredil.it',
+})
+useHead({
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/img/faviconMaredil.svg' }
+  ]
 })
 const isMenuOpen = ref(false)
 const toggleMenu = () => {

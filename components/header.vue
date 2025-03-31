@@ -14,7 +14,7 @@ const onHamburgerClick = () => {
 <template>
     <div class="continerHeader">
         <div class="containerLogo">
-            <NuxtLink to="/">  <img src="/img/logomaredilbiancoII.svg" alt=""></NuxtLink>
+            <NuxtLink to="/">  <img src="/img/logomaredilbiancsrl.svg" alt=""></NuxtLink>
         </div>
         <div class="containerMenu">
             <p class="text-white cursor-pointer font-bold">CHI SIAMO</p>
