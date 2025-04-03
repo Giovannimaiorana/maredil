@@ -10,7 +10,7 @@ useSeoMeta({
   ogDescription: 'Affidati a Maredil per ristrutturazioni e manutenzioni di qualità. Specializzati in cappotti termici, cartongessi, pitture, pavimenti e coperture.',
   ogImage: 'https://maredilcostruzioni.it/img/maredilSeo.png',
   ogSiteName: 'MAREDIL Costruzioni',
-  ogUrl: 'https://maredil.it',
+  ogUrl: 'https://maredilcostruzioni.it',
 })
 useHead({
   link: [
@@ -57,9 +57,11 @@ onUnmounted(() => {
 
 <style scoped>
 .sticky-header {
-  position: sticky;      
-  top: 0;               
-  z-index: 10;          
+  position: fixed;   
+  width: 100%;   
+  top: 0;     
+  right: 0;          
+  z-index: 13;          
 }
 .mainStyle{
   position: relative;

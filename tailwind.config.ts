@@ -12,7 +12,7 @@ export default <Config>{
         colors: {
           },
           fontFamily: {
-            sans: ["Montserrat", "sans-serif"], 
+            mar: ["marFont", "sans-serif"], 
           },
     },
   },

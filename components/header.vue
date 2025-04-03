@@ -17,9 +17,9 @@ const onHamburgerClick = () => {
             <NuxtLink to="/">  <img src="/img/logomaredilbiancsrl.svg" alt=""></NuxtLink>
         </div>
         <div class="containerMenu">
-            <p class="text-white cursor-pointer font-bold">CHI SIAMO</p>
-            <p class="text-white cursor-pointer font-bold">SERVIZI</p>
-            <p class="text-white cursor-pointer font-bold">CONTATTI</p>
+            <p class="text-white cursor-pointer font-bold font-mar ">CHI SIAMO</p>
+            <p class="text-white cursor-pointer font-bold font-mar ">SERVIZI</p>
+            <p class="text-white cursor-pointer font-bold font-mar ">CONTATTI</p>
         </div>
         <div class="containerResponsive">
             <img   @click="onHamburgerClick" class="cursor-pointer" src="/img/hamburgerMenu2.svg" alt="">
@@ -31,17 +31,16 @@ const onHamburgerClick = () => {
 .continerHeader {
     height: 100px;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: rgb(89, 138, 192);
+    background-color: rgba(89, 139, 192, 0);
     z-index: 4;
 
 }
 .containerLogo img{
-height: 80px;
+height: 50px;
 }
 .activeLanguage{
     color: #78f9ad;
