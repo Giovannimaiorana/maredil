@@ -35,7 +35,7 @@ const onHamburgerClick = () => {
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: rgb(89, 139, 192);
+    background-color: rgba(89, 139, 192, 0);
     z-index: 4;
 
 }

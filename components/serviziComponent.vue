@@ -12,12 +12,12 @@ export default {
         gsap.from(row, {
           opacity: 0,
           y: 50,
-          duration: 2,
+          duration: 1,
           ease: "power3.out",
-          delay: index * 0.3,
+    
           scrollTrigger: {
             trigger: row,
-            start: "top 80%",
+            start: "top 90%",
             toggleActions: "play none none reverse",
           },
         });
@@ -37,13 +37,13 @@ export default {
 
 <template>
   <div class="wrapperService">
-    <div class="containerTitle">
+    <div class="containerTitle mb-3">
       <p class="font-mar text-2xl md:text-6xl text-white text-center personalized">
         LE NOSTRE SOLUZIONI EDILI
       </p>
     </div>
 
-    <div class="row mt-9">
+    <div class="row mt-10">
       <p class="text-2xl md:text-4xl lg:text-6xl text-white">RISTRUTTURAZIONI</p>
       <p class="text-white text-xs space mt-3 mb-3">
         Trasformiamo e miglioriamo ogni spazio con interventi su misura.
@@ -85,6 +85,9 @@ export default {
         Finiture di qualità per dare colore e stile agli spazi.
       </p>
     </div>
+    <div class="mt-5">
+      <p class="buttonStyle  text-white text-center font-bold cursor-pointer">SCOPRI DI PIU'</p>
+    </div>
   </div>
 </template>
 
@@ -118,6 +121,12 @@ export default {
 
 .space{
   letter-spacing: 3px;
+}
+.buttonStyle{
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 @media (max-width: 950px) {
   .containerGeneralDescription{
