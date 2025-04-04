@@ -35,7 +35,7 @@ const onHamburgerClick = () => {
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: rgba(89, 139, 192, 0);
+    background-color: rgb(89, 139, 192);
     z-index: 4;
 
 }
@@ -51,7 +51,7 @@ height: 50px;
     gap: 20px;
 }
 .containerMenu p:hover{
-    color: rgb(44, 90, 153);
+    color: rgb(44, 89, 153);
 }
 .containerResponsive{
     display: none;
