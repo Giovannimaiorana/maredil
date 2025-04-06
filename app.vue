@@ -30,25 +30,39 @@ watch(route, () => {
 const scrolledPastHero = ref(false)
 
 const handleScroll = () => {
-  scrolledPastHero.value = window.scrollY > window.innerHeight
+  const scrollY = window.scrollY;
+  const viewportHeight = window.innerHeight;
+  const thresholdMobile = viewportHeight * 0.3; // 30% di 100vh per dispositivi mobili
+  const thresholdDesktop = viewportHeight; // 100vh per dispositivi desktop
+  
+  // Controlla la larghezza della finestra
+  const isMobile = window.innerWidth < 768;
+
+  // Cambia il colore dell'header per dispositivi mobili (30% di 100vh)
+  if (isMobile) {
+    scrolledPastHero.value = scrollY > thresholdMobile;
+  } else {
+    // Cambia il colore dell'header per desktop (dopo aver scrollato oltre 100vh)
+    scrolledPastHero.value = scrollY > thresholdDesktop;
+  }
 }
 
 const handleResize = () => {
   if (window.innerWidth > 768) {
-    isMenuOpen.value = false
+    isMenuOpen.value = false;
+    scrolledPastHero.value = false; // Reset per gli schermi grandi
   }
 }
 
 onMounted(() => {
-  window.addEventListener('resize', handleResize)
-  window.addEventListener('scroll', handleScroll)
-})
+  window.addEventListener('resize', handleResize);
+  window.addEventListener('scroll', handleScroll);
+});
 
 onUnmounted(() => {
-  window.removeEventListener('resize', handleResize)
-  window.removeEventListener('scroll', handleScroll)
-})
-
+  window.removeEventListener('resize', handleResize);
+  window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
 
@@ -75,7 +89,7 @@ onUnmounted(() => {
   width: 100%;
   top: -5px;
   right: 0;
-  z-index: 13;
+  z-index: 30;
   background-color: transparent;
   transition: background-color 0.4s ease, transform 0.4s ease;
 }
