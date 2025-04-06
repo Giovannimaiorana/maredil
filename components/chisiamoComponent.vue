@@ -79,7 +79,7 @@ onMounted(() => {
 .wrapperContainer{
     width: 100%;
     height: auto;
-    padding-top: 50px;
+    padding-top: 100px;
     overflow-x: hidden;
 }
 .containerTitle{
@@ -125,6 +125,7 @@ onMounted(() => {
 .containerButton{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 }
 </style>

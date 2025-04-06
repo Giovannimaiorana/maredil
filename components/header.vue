@@ -57,6 +57,9 @@ height: 50px;
     display: none;
 }
 @media (max-width: 768px) {
+    .continerHeader{
+        padding: 10px;
+    }
     .containerMenu{
         display: none;
     }
