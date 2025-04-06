@@ -80,6 +80,7 @@ onMounted(() => {
     width: 100%;
     height: auto;
     padding-top: 50px;
+    overflow-x: hidden;
 }
 .containerTitle{
     width: 100%;
