@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import footerComponent from '~/components/footer.vue';
 import serviziComponent from '~/components/serviziComponent.vue';
+import chisiamoComponent from '~/components/chisiamoComponent.vue';
 </script>
 
 <template>
@@ -15,7 +16,7 @@ import serviziComponent from '~/components/serviziComponent.vue';
         <serviziComponent/>
     </div>
     <div class="containerChisiamo">
-
+        <chisiamoComponent/>
     </div>
     <div class="containerFooter">
         <footerComponent/>
@@ -46,8 +47,9 @@ import serviziComponent from '~/components/serviziComponent.vue';
 }
 .containerChisiamo{
     width: 100%;
-    height: 500px;  
-    background: linear-gradient(to top, rgb(255, 255, 255)0%, rgb(89, 139, 192) 100%); 
+    height: auto;
+    background: linear-gradient(to top, rgb(0, 0, 0)0%, rgb(89, 139, 192) 100%); 
+    padding-bottom: 50px;
  
 }
 .overlay{

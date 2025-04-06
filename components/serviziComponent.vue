@@ -8,13 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 export default {
   setup() {
     onMounted(() => {
+
       gsap.utils.toArray(".row").forEach((row, index) => {
         gsap.from(row, {
           opacity: 0,
           y: 50,
           duration: 1,
           ease: "power3.out",
-    
           scrollTrigger: {
             trigger: row,
             start: "top 90%",
@@ -23,6 +23,7 @@ export default {
         });
       });
 
+
       gsap.from(".containerTitle p", {
         opacity: 0,
         y: -30,
@@ -30,10 +31,23 @@ export default {
         ease: "power2.out",
         delay: 0.3,
       });
+
+      gsap.from(".containerButton", {
+        opacity: 0,
+        x: 40,
+        duration: 1.2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".containerButton",
+          start: "top 95%", 
+          toggleActions: "play none none reverse",
+        },
+      });
     });
   },
 };
 </script>
+
 
 <template>
   <div class="wrapperService">
@@ -85,7 +99,7 @@ export default {
         Finiture di qualità per dare colore e stile agli spazi.
       </p>
     </div>
-    <div class="mt-5">
+    <div class="containerButton">
       <p class="buttonStyle  text-white text-center font-bold cursor-pointer">SCOPRI DI PIU'</p>
     </div>
   </div>
@@ -127,6 +141,9 @@ export default {
   border: 1px solid white;
   border-radius: 5px;
   padding: 5px 10px;
+}
+.containerButton{
+  margin-top: 50px;
 }
 @media (max-width: 950px) {
   .containerGeneralDescription{

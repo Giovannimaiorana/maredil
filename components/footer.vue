@@ -1,23 +1,29 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const openPrivacyPolicy = () => {
+
+  window.open('/documenti/maredilPP.pdf', '_blank');
+};
+
+</script>
 
 <template>
     <div class="wrapperFooter">
 
             <div class="containerLogo">
-                <img src="/img/logoMaredil.svg" alt="">
+                <img src="/img/logomaredilbiancsrl.svg" alt="">
             </div>
             <div class="containerSocial">
                 <img class="cursor-pointer" src="/img/instagramIcon.svg" alt="">
                 <img class="cursor-pointer" src="/img/facebookIcon.svg" alt="">
             </div>
-            <div class="containerInformation">
+            <div class="containerInformation text-white">
                 <p class="font-bold text-xs text-center">Contrada la Torre 6 SUBIACO 00028 Rm</p>
                 <p class="font-bold text-xs text-center">Mail: maredilcostruzioni17@gmail.com</p>
                 <p class="font-bold text-xs text-center">Pec: maredilcostruzioni@legalmail.it</p>
                 <p class="font-bold text-xs text-center">Tel +39 3278210185 </p>
                 <p class="font-bold text-xs text-center">P.iva 15761541000</p>
                 <p class="font-bold text-xs text-center">C.univ. M5UXCR1</p>
-                <p class="font-bold  text-xs text-center underline cursor-pointer">Privacy Policy</p>
+                <p class="font-bold  text-xs text-center underline cursor-pointer" @click="openPrivacyPolicy">Privacy Policy</p>
              
             </div>
 
@@ -30,7 +36,7 @@
 .wrapperFooter{
     width: 100%;
     height: 300px;
-    background-color: white;
+    background-color: black;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -42,7 +48,7 @@
     justify-content: center;
 }
 .containerLogo img{
-    height: 100px;
+    height: 80px;
 }
 .containerSocial{
     display: flex;
