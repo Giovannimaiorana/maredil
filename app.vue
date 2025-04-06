@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import headerComponent from './components/header.vue';
 import headerSidebar from './components/headerSidebar.vue';
+import footerComponent from './components/footer.vue';
 
 useSeoMeta({
   title: 'Ristrutturazioni e Manutenzioni Edili | MAREDIL Costruzioni',
@@ -73,7 +74,6 @@ onUnmounted(() => {
   </nav>
   <main class="mainStyle" >
       <headerSidebar class="responsiveSidebar" v-if="isMenuOpen"/>
-    
         <NuxtPage />
 
   </main>

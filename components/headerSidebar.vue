@@ -9,8 +9,8 @@ const isActive = (path: string) => route.path === path
 <template>
     <div class="continerHeader">
         <div class="containerMenu">
+            <p :class="[isActive('/service') ? 'active' : 'text-white', 'fext-white cursor-pointer font-bold']"><NuxtLink to="/service">SERVIZI</NuxtLink></p>
             <p class="text-white cursor-pointer font-bold">CHI SIAMO</p>
-            <p class="text-white cursor-pointer font-bold">SERVIZI</p>
             <p class="text-white cursor-pointer font-bold">CONTATTI</p>
         </div>
 
@@ -20,6 +20,9 @@ const isActive = (path: string) => route.path === path
 .continerHeader{
     background-color: rgb(89, 138, 192);
     padding: 20px;
+}
+.active{
+    color: rgb(44, 90, 153); 
 }
 .containerMenu{
     display: flex;

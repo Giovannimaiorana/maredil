@@ -12,11 +12,8 @@ const openPrivacyPolicy = () => {
             <div class="containerLogo">
                 <img src="/img/logomaredilbiancsrl.svg" alt="">
             </div>
-            <div class="containerSocial">
-                <img class="cursor-pointer" src="/img/instagramIcon.svg" alt="">
-                <img class="cursor-pointer" src="/img/facebookIcon.svg" alt="">
-            </div>
-            <div class="containerInformation text-white">
+
+            <div class="containerInformation text-white mt-5">
                 <p class="font-bold text-xs text-center">Contrada la Torre 6 SUBIACO 00028 Rm</p>
                 <p class="font-bold text-xs text-center">Mail: maredilcostruzioni17@gmail.com</p>
                 <p class="font-bold text-xs text-center">Pec: maredilcostruzioni@legalmail.it</p>

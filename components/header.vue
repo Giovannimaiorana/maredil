@@ -16,14 +16,14 @@ const onHamburgerClick = () => {
         <div class="containerLogo">
             <NuxtLink to="/">  <img src="/img/logomaredilbiancsrl.svg" alt=""></NuxtLink>
         </div>
-        <div class="containerMenu">
+     <!--   <div class="containerMenu">
             <p class="text-white cursor-pointer font-bold font-mar ">CHI SIAMO</p>
-            <p class="text-white cursor-pointer font-bold font-mar ">SERVIZI</p>
+            <p class="text-white cursor-pointer font-bold font-mar "><NuxtLink to="/service">SERVIZI</NuxtLink></p>
             <p class="text-white cursor-pointer font-bold font-mar ">CONTATTI</p>
         </div>
         <div class="containerResponsive">
             <img   @click="onHamburgerClick" class="cursor-pointer" src="/img/hamburgerMenu2.svg" alt="">
-        </div>
+        </div>-->
     </div>
 </template>
 
@@ -39,8 +39,13 @@ const onHamburgerClick = () => {
     z-index: 4;
 
 }
+.containerLogo{
+    width: 100%;
+    justify-content: start;
+    display: flex;
+}
 .containerLogo img{
-height: 50px;
+height: 60px;
 }
 .activeLanguage{
     color: #78f9ad;

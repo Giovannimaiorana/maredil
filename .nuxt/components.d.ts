@@ -13,6 +13,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 interface _GlobalComponents {
       'ChisiamoComponent': typeof import("../components/chisiamoComponent.vue")['default']
+    'ContactComponent': typeof import("../components/contactComponent.vue")['default']
     'Footer': typeof import("../components/footer.vue")['default']
     'Header': typeof import("../components/header.vue")['default']
     'HeaderSidebar': typeof import("../components/headerSidebar.vue")['default']
@@ -41,6 +42,7 @@ interface _GlobalComponents {
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyChisiamoComponent': LazyComponent<typeof import("../components/chisiamoComponent.vue")['default']>
+    'LazyContactComponent': LazyComponent<typeof import("../components/contactComponent.vue")['default']>
     'LazyFooter': LazyComponent<typeof import("../components/footer.vue")['default']>
     'LazyHeader': LazyComponent<typeof import("../components/header.vue")['default']>
     'LazyHeaderSidebar': LazyComponent<typeof import("../components/headerSidebar.vue")['default']>
@@ -75,6 +77,7 @@ declare module 'vue' {
 }
 
 export const ChisiamoComponent: typeof import("../components/chisiamoComponent.vue")['default']
+export const ContactComponent: typeof import("../components/contactComponent.vue")['default']
 export const Footer: typeof import("../components/footer.vue")['default']
 export const Header: typeof import("../components/header.vue")['default']
 export const HeaderSidebar: typeof import("../components/headerSidebar.vue")['default']
@@ -103,6 +106,7 @@ export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyChisiamoComponent: LazyComponent<typeof import("../components/chisiamoComponent.vue")['default']>
+export const LazyContactComponent: LazyComponent<typeof import("../components/contactComponent.vue")['default']>
 export const LazyFooter: LazyComponent<typeof import("../components/footer.vue")['default']>
 export const LazyHeader: LazyComponent<typeof import("../components/header.vue")['default']>
 export const LazyHeaderSidebar: LazyComponent<typeof import("../components/headerSidebar.vue")['default']>

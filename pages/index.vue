@@ -2,6 +2,7 @@
 import footerComponent from '~/components/footer.vue';
 import serviziComponent from '~/components/serviziComponent.vue';
 import chisiamoComponent from '~/components/chisiamoComponent.vue';
+import contactComponent from '~/components/contactComponent.vue';
 </script>
 
 <template>
@@ -18,9 +19,10 @@ import chisiamoComponent from '~/components/chisiamoComponent.vue';
     <div class="containerChisiamo">
         <chisiamoComponent/>
     </div>
-    <div class="containerFooter">
-        <footerComponent/>
+    <div class="containerContact">
+        <contactComponent/>
     </div>
+
 </template>
 
 <style scoped>
@@ -51,6 +53,10 @@ import chisiamoComponent from '~/components/chisiamoComponent.vue';
     background: linear-gradient(to top, rgb(0, 0, 0)0%, rgb(89, 139, 192) 100%); 
     padding-bottom: 50px;
  
+}
+.containerContact{
+    width: 100%;
+    height: auto;
 }
 .overlay{
     position: absolute;
