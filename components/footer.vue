@@ -10,10 +10,10 @@ const openPrivacyPolicy = () => {
     <div class="wrapperFooter">
 
             <div class="containerLogo">
-                <img src="/img/logomaredilbiancsrl.svg" alt="">
+                <img class="logofoot" src="/img/mare3.svg" alt="">
             </div>
 
-            <div class="containerInformation text-white mt-5">
+            <div class="containerInformation text-white ">
                 <p class="font-bold text-xs text-center">Contrada la Torre 6 SUBIACO 00028 Rm</p>
                 <p class="font-bold text-xs text-center">Mail: maredilcostruzioni17@gmail.com</p>
                 <p class="font-bold text-xs text-center">Pec: maredilcostruzioni@legalmail.it</p>
@@ -32,7 +32,7 @@ const openPrivacyPolicy = () => {
 <style scoped>
 .wrapperFooter{
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -45,19 +45,22 @@ const openPrivacyPolicy = () => {
     justify-content: center;
 }
 .containerLogo img{
-    height: 80px;
+    height: 210px;
 }
 .containerSocial{
     display: flex;
     justify-content: center;
 }
 .containerSocial img{
-    height: 60px;
+    height: 90px;
 }
+
 .containerInformation{
     width: 100%;
     display: flex;
+    margin-top: -40px;
     flex-direction: column;
     justify-content: center;
 }
+
 </style>

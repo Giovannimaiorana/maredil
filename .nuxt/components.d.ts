@@ -17,6 +17,7 @@ interface _GlobalComponents {
     'Footer': typeof import("../components/footer.vue")['default']
     'Header': typeof import("../components/header.vue")['default']
     'HeaderSidebar': typeof import("../components/headerSidebar.vue")['default']
+    'OurWork': typeof import("../components/ourWork.vue")['default']
     'ServiziComponent': typeof import("../components/serviziComponent.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -46,6 +47,7 @@ interface _GlobalComponents {
     'LazyFooter': LazyComponent<typeof import("../components/footer.vue")['default']>
     'LazyHeader': LazyComponent<typeof import("../components/header.vue")['default']>
     'LazyHeaderSidebar': LazyComponent<typeof import("../components/headerSidebar.vue")['default']>
+    'LazyOurWork': LazyComponent<typeof import("../components/ourWork.vue")['default']>
     'LazyServiziComponent': LazyComponent<typeof import("../components/serviziComponent.vue")['default']>
     'LazyNuxtWelcome': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
     'LazyNuxtLayout': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
@@ -81,6 +83,7 @@ export const ContactComponent: typeof import("../components/contactComponent.vue
 export const Footer: typeof import("../components/footer.vue")['default']
 export const Header: typeof import("../components/header.vue")['default']
 export const HeaderSidebar: typeof import("../components/headerSidebar.vue")['default']
+export const OurWork: typeof import("../components/ourWork.vue")['default']
 export const ServiziComponent: typeof import("../components/serviziComponent.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -110,6 +113,7 @@ export const LazyContactComponent: LazyComponent<typeof import("../components/co
 export const LazyFooter: LazyComponent<typeof import("../components/footer.vue")['default']>
 export const LazyHeader: LazyComponent<typeof import("../components/header.vue")['default']>
 export const LazyHeaderSidebar: LazyComponent<typeof import("../components/headerSidebar.vue")['default']>
+export const LazyOurWork: LazyComponent<typeof import("../components/ourWork.vue")['default']>
 export const LazyServiziComponent: LazyComponent<typeof import("../components/serviziComponent.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>

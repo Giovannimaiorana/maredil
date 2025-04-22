@@ -3,6 +3,7 @@ import footerComponent from '~/components/footer.vue';
 import serviziComponent from '~/components/serviziComponent.vue';
 import chisiamoComponent from '~/components/chisiamoComponent.vue';
 import contactComponent from '~/components/contactComponent.vue';
+import ourWork from '~/components/ourWork.vue';
 </script>
 
 <template>
@@ -18,6 +19,9 @@ import contactComponent from '~/components/contactComponent.vue';
     </div>
     <div class="containerChisiamo">
         <chisiamoComponent/>
+    </div>
+    <div class="containerWokr">
+        <ourWork/>
     </div>
     <div class="containerContact">
         <contactComponent/>
@@ -50,9 +54,15 @@ import contactComponent from '~/components/contactComponent.vue';
 .containerChisiamo{
     width: 100%;
     height: auto;
-    background: linear-gradient(to top, rgb(0, 0, 0)0%, rgb(89, 139, 192) 100%); 
+    background: linear-gradient(to top, rgb(89, 139, 192)0%, rgb(89, 139, 192) 100%); 
     padding-bottom: 50px;
  
+}
+.containerWokr{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, rgb(89, 139, 192) 0%, rgb(0, 0, 0) 100%); 
+    padding-bottom: 50px;
 }
 .containerContact{
     width: 100%;
