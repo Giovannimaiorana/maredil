@@ -19,6 +19,7 @@ interface _GlobalComponents {
     'HeaderSidebar': typeof import("../components/headerSidebar.vue")['default']
     'OurWork': typeof import("../components/ourWork.vue")['default']
     'ServiziComponent': typeof import("../components/serviziComponent.vue")['default']
+    'SoaCertificed': typeof import("../components/soaCertificed.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -49,6 +50,7 @@ interface _GlobalComponents {
     'LazyHeaderSidebar': LazyComponent<typeof import("../components/headerSidebar.vue")['default']>
     'LazyOurWork': LazyComponent<typeof import("../components/ourWork.vue")['default']>
     'LazyServiziComponent': LazyComponent<typeof import("../components/serviziComponent.vue")['default']>
+    'LazySoaCertificed': LazyComponent<typeof import("../components/soaCertificed.vue")['default']>
     'LazyNuxtWelcome': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
     'LazyNuxtLayout': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
     'LazyNuxtErrorBoundary': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']>
@@ -85,6 +87,7 @@ export const Header: typeof import("../components/header.vue")['default']
 export const HeaderSidebar: typeof import("../components/headerSidebar.vue")['default']
 export const OurWork: typeof import("../components/ourWork.vue")['default']
 export const ServiziComponent: typeof import("../components/serviziComponent.vue")['default']
+export const SoaCertificed: typeof import("../components/soaCertificed.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -115,6 +118,7 @@ export const LazyHeader: LazyComponent<typeof import("../components/header.vue")
 export const LazyHeaderSidebar: LazyComponent<typeof import("../components/headerSidebar.vue")['default']>
 export const LazyOurWork: LazyComponent<typeof import("../components/ourWork.vue")['default']>
 export const LazyServiziComponent: LazyComponent<typeof import("../components/serviziComponent.vue")['default']>
+export const LazySoaCertificed: LazyComponent<typeof import("../components/soaCertificed.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']>

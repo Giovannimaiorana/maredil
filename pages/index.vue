@@ -4,6 +4,7 @@ import serviziComponent from '~/components/serviziComponent.vue';
 import chisiamoComponent from '~/components/chisiamoComponent.vue';
 import contactComponent from '~/components/contactComponent.vue';
 import ourWork from '~/components/ourWork.vue';
+import soaCertificed from '~/components/soaCertificed.vue';
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import ourWork from '~/components/ourWork.vue';
     <div class="containerdescription">
         <serviziComponent/>
     </div>
+
     <div class="containerChisiamo">
         <chisiamoComponent/>
     </div>

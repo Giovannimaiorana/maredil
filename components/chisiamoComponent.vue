@@ -62,9 +62,7 @@ onMounted(() => {
           <p class="text-white">
             Siamo un team di professionisti con una lunga esperienza nel settore dell’edilizia, cresciuti con la passione per il costruire e la dedizione al lavoro fatto a regola d’arte. Nel corso degli anni abbiamo seguito progetti di ogni tipo, dalle piccole ristrutturazioni agli interventi strutturali più complessi, sempre con un approccio attento alle esigenze del cliente e al contesto in cui operiamo.
           </p>
-          <div class="containerButton">
-            <p class="buttonStyle text-white text-center mt-3 cursor-pointer">SCOPRI CHI SIAMO</p>
-          </div>
+
         </div>
       </div>
       <div class="containerRight" ref="imageRef">
