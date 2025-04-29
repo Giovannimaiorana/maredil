@@ -11,7 +11,7 @@ import soaCertificed from '~/components/soaCertificed.vue';
     <div class="wrapperHome">
         <div class="overlay"></div>
         <div class="containerText">
-            <p class="font-mar  text-6xl md:text-9xl  text-center text-white">MAREDIL</p>
+            <p class="font-mar  text-6xl md:text-9xl  text-center text-white  ">MAREDIL</p>
             <p class=" font-bold mottoStyle text-xs md:text-xl text-white text-center">Costruiamo qualità, rinnoviamo il tuo spazio</p>
         </div>
     </div>
@@ -51,7 +51,10 @@ import soaCertificed from '~/components/soaCertificed.vue';
 .containerdescription{
     width: 100%;
     height: auto;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgb(89, 139, 192) 100%);
+    background: linear-gradient(to bottom, rgba(44, 90, 153, 1) 0%, rgb(89, 139, 192) 100%);
+}
+.colorrrr{
+    color: rgb(89, 139, 192);
 }
 .containerChisiamo{
     width: 100%;
@@ -70,17 +73,24 @@ import soaCertificed from '~/components/soaCertificed.vue';
     width: 100%;
     height: auto;
 }
+.personalized2{
+    color: rgb(89, 139, 192) ;
+}
 .overlay{
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 1) 100%);
     z-index: 7;
+    background-color: rgba(0, 0, 0, 0.537);
 }
 .containerText{
     z-index: 10;
 }
 .mottoStyle{
     letter-spacing: 2px;
+}
+.d{
+    background: linear-gradient(to bottom, rgba(44, 90, 153, 0.0) 0%,rgba(44, 90, 153, 0.0) 0%, rgba(44, 90,153, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.094) 40%,rgba(44, 90, 153, 0.0) 90%, rgba(44, 90,153, 1) 100%);
 }
 </style>

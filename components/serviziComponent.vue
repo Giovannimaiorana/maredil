@@ -52,7 +52,7 @@ export default {
 <template>
   <div class="wrapperService">
     <div class="containerTitle mb-3">
-      <p class="font-mar text-2xl md:text-6xl text-white text-center personalized">
+      <p class="font-mar text-2xl md:text-6xl text-white text-center ">
         LE NOSTRE SOLUZIONI EDILI
       </p>
     </div>

@@ -6,6 +6,7 @@ const route = useRoute()
 const isActive = (path: string) => route.path === path
 const emit = defineEmits(['toggleMenu'])
 
+
 const onHamburgerClick = () => {
   emit('toggleMenu')
 }
