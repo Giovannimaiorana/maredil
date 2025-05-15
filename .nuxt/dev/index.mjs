@@ -249,7 +249,7 @@ const _EFaj1ka_fYYLQmhbwkss45bDkfnBU2shqROLztZaPrg = (function(nitro) {
 
 const rootDir = "/Users/giovannimaiorana/Desktop/maredil";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"google-site-verification","content":"R-g24sdkdl0O1jM04UX6zpsVwlNywVgwGimwqgJ_Neo"}],"link":[],"style":[],"script":[],"noscript":[]};
 
 const appRootTag = "div";
 
