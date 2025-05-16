@@ -2,12 +2,14 @@
 import headerComponent from './components/header.vue';
 import headerSidebar from './components/headerSidebar.vue';
 import footerComponent from './components/footer.vue';
+import { useHead } from '#imports'
+
 
 useSeoMeta({
-  title: 'Ristrutturazioni e Manutenzioni Edili | MAREDIL Costruzioni',
-  ogTitle: 'MAREDIL - Esperti in Ristrutturazioni e Soluzioni Edili',
-  description: 'Maredil Costruzioni offre servizi di ristrutturazione, manutenzione edifici, cappotti termici, cartongessi, pitture, pavimenti e coperture per privati e aziende.',
-  ogDescription: 'Affidati a Maredil per ristrutturazioni e manutenzioni di qualità. Specializzati in cappotti termici, cartongessi, pitture, pavimenti e coperture.',
+  title: 'Impresa Edile a Subiaco | Ristrutturazioni e Manutenzioni Edili - MAREDIL',
+  ogTitle: 'MAREDIL - Impresa Edile e Ristrutturazioni a Subiaco',
+  description: 'MAREDIL Costruzioni, impresa edile a Subiaco, offre servizi di ristrutturazione, manutenzione, cappotti termici e molto altro per privati e aziende.',
+  ogDescription: 'Affidati a MAREDIL, impresa edile a Subiaco, per lavori di ristrutturazione, manutenzione, pitture, pavimenti e coperture di alta qualità.',
   ogImage: 'https://maredilcostruzioni.it/img/maredilSeo.png',
   ogSiteName: 'MAREDIL Costruzioni',
   ogUrl: 'https://maredilcostruzioni.it',
@@ -15,8 +17,37 @@ useSeoMeta({
 useHead({
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/img/faviconMaredil.svg' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        'name': 'MAREDIL Costruzioni',
+        'image': 'https://maredilcostruzioni.it/img/maredilSeo.png',
+        'address': {
+          '@type': 'PostalAddress',
+          'streetAddress': 'CONTRADA LA TORRE 6',
+          'addressLocality': 'Subiaco',
+          'addressRegion': 'RM',
+          'postalCode': '00028',
+          'addressCountry': 'IT'
+        },
+        'telephone': '+3278210185',
+        'url': 'https://maredilcostruzioni.it',
+        'sameAs': [
+          'https://www.facebook.com/maredil',
+          'https://www.instagram.com/maredil'
+        ],
+        'openingHours': 'Mo-Fr 08:00-18:00',
+        'description': 'Impresa edile a Subiaco specializzata in ristrutturazioni, manutenzioni edili e soluzioni per il settore costruzioni.'
+      }) as any
+    } as any
   ]
 })
+
+
 
 const isMenuOpen = ref(false)
 const toggleMenu = () => {
